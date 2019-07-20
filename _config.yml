@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
+title: 暮野夕风
+subtitle: 暮野夕风
+description: 一切从心。
 keywords:
-author: John Doe
-language:
+author: 暮野夕风
+language: zh-CN
 timezone:
 
 # URL
@@ -39,10 +39,10 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
+  enable: false
+  # line_number: true
+  # auto_detect: false
+  # tab_replace:
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -70,10 +70,31 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
+# <<<<<<<<<<<<<<<<<<<< hexo-theme-matery 主题相关配置 <<<<<<<<<<<<<<<<<<<<
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# hexo-theme-matery 仓库：https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md
+theme: hexo-theme-matery
+# theme: landscape
+
+# prism_plugin 代码高亮插件
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: false    # default false
+  custom_css:
+
+# 搜索插件
+search:
+  path: search.xml
+  field: post
+
+# 中文链接转拼音链接插件
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
+# >>>>>>>>>>>>>>>>>>>> hexo-theme-matery 主题相关配置 >>>>>>>>>>>>>>>>>>>>
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
