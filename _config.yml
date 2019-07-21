@@ -100,4 +100,3 @@ permalink_pinyin:
 deploy:
   type: git
   repo: git@github.com:WeiXiaoMin/weixiaomin.github.io.git
-  branch: gh-pages
