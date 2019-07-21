@@ -5,8 +5,8 @@
     
     <entry>
       <title>搭建Hexo博客</title>
-      <link href="/myxf/2019/07/21/da-jian-hexo-bo-ke/"/>
-      <url>/myxf/2019/07/21/da-jian-hexo-bo-ke/</url>
+      <link href="/2019/07/21/da-jian-hexo-bo-ke/"/>
+      <url>/2019/07/21/da-jian-hexo-bo-ke/</url>
       
         <content type="html"><![CDATA[<h2 id="工具与文档"><a href="#工具与文档" class="headerlink" title="工具与文档"></a>工具与文档</h2><h3 id="基础工具"><a href="#基础工具" class="headerlink" title="基础工具"></a>基础工具</h3><ul><li><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo 博客框架：Hexo 官方文档</a></li><li><a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">Hexo 主题：hexo-theme-matery 的 github 仓库地址</a></li><li><a href="https://github.com/" target="_blank" rel="noopener">代码托管及部署：github</a></li></ul><h3 id="素材"><a href="#素材" class="headerlink" title="素材"></a>素材</h3><ul><li><a href="https://music.liuzhijin.cn/" target="_blank" rel="noopener">音乐素材：刘志进实验室-音乐直链搜索</a></li><li><a href="http://www.ytmp3.cn/" target="_blank" rel="noopener">音乐素材：扬天音乐</a></li><li><a href="https://music.163.com/" target="_blank" rel="noopener">音乐素材：网易云音乐（可以生成外链播放器）</a></li><li><a href="http://zhongguose.com/" target="_blank" rel="noopener">色彩素材：中国色</a></li><li><a href="http://app.inker.co/" target="_blank" rel="noopener">图标制作：inker 矢量图在线制作</a></li><li><a href="http://desk.zol.com.cn/" target="_blank" rel="noopener">图片素材：ZOL桌面壁纸</a></li></ul>]]></content>
       
@@ -30,8 +30,8 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/myxf/2019/07/21/hello-world/"/>
-      <url>/myxf/2019/07/21/hello-world/</url>
+      <link href="/2019/07/21/hello-world/"/>
+      <url>/2019/07/21/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
