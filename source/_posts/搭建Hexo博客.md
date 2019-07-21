@@ -17,6 +17,8 @@ tags:
   - Hexo
 ---
 
+> 搭建 Hexo 博客需要一定的前端基础。技术栈涉及 Node.js、css、yaml 等。
+
 ## 工具与文档
 
 ### 基础工具
@@ -24,6 +26,7 @@ tags:
 * [Hexo 博客框架：Hexo 官方文档](https://hexo.io/zh-cn/)
 * [Hexo 主题：hexo-theme-matery 的 github 仓库地址](https://github.com/blinkfox/hexo-theme-matery)
 * [代码托管及部署：github](https://github.com/)
+* [配置文件语言：YAML 语言教程](http://www.ruanyifeng.com/blog/2016/07/yaml.html)
 
 ### 素材
 
@@ -31,5 +34,5 @@ tags:
 * [音乐素材：扬天音乐](http://www.ytmp3.cn/)
 * [音乐素材：网易云音乐（可以生成外链播放器）](https://music.163.com/)
 * [色彩素材：中国色](http://zhongguose.com/)
-* [图标制作：inker 矢量图在线制作](http://app.inker.co/)
+* [图标制作：inker 矢量图在线制作（没用上）](http://app.inker.co/)
 * [图片素材：ZOL桌面壁纸](http://desk.zol.com.cn/)
