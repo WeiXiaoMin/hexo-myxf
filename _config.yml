@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://weixiaomin.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -76,7 +76,6 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 # hexo-theme-matery 仓库：https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md
 theme: hexo-theme-matery
-# theme: landscape
 
 # prism_plugin 代码高亮插件
 prism_plugin:
@@ -100,5 +99,5 @@ permalink_pinyin:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:WeiXiaoMin/hexo-myxf.git
+  repo: git@github.com:WeiXiaoMin/weixiaomin.github.io.git
   branch: gh-pages
