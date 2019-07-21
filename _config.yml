@@ -99,4 +99,6 @@ permalink_pinyin:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:WeiXiaoMin/hexo-myxf.git
+  branch: gh-pages
