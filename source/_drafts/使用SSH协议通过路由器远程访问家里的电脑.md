@@ -7,8 +7,13 @@ date: 2019-07-26 01:27:39
 img:
 coverImg:
 summary:
-categories:
+categories: 技术
 tags:
+  - SSH
+  - freeSSH
+  - window系统
+  - 远程访问
+  - 路由器
 ---
 
 ## 技术背景
