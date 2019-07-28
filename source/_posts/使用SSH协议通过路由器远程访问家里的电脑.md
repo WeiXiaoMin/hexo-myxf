@@ -3,10 +3,6 @@ title: 使用SSH协议通过路由器远程访问家里的电脑
 author: 暮野夕风
 top: true
 cover: false
-date: 2019-07-26 01:27:39
-img:
-coverImg:
-summary:
 categories: 技术
 tags:
   - SSH
@@ -14,7 +10,12 @@ tags:
   - window系统
   - 远程访问
   - 路由器
+date: 2019-07-26 01:27:39
+img:
+coverImg:
+summary:
 ---
+
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1315901717&auto=1&height=66"></iframe>
 
