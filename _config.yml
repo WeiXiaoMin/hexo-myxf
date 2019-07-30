@@ -93,6 +93,17 @@ search:
 permalink_pinyin:
   enable: true
   separator: '-' # default: '-'
+
+# 订阅功能
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
 # >>>>>>>>>>>>>>>>>>>> hexo-theme-matery 主题相关配置 >>>>>>>>>>>>>>>>>>>>
 
 # Deployment
