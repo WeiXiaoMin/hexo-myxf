@@ -4,14 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="搭建Hexo博客, 暮野夕风">
+    <meta name="keywords" content="React Native Context 用法, 暮野夕风">
     <meta name="description" content="
-搭建 Hexo 博客需要一定的前端基础。技术栈涉及 Node.js、css、yaml 等。
+参考资料：
+React Native 官网文章：ContextReact Native 官网文章：Context(简体中文文档)
 
-工具与文档基础工具
-Hexo 博客框架：Hexo 官方文档
-Hexo 主题：hexo-theme-matery 的 github 仓库地址
-代码">
+本文示例代码使用 TypeScript 语言。
+使用场景在整个视图树中传递数据，不必每个层级都通过 Pro">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +18,7 @@ Hexo 主题：hexo-theme-matery 的 github 仓库地址
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>搭建Hexo博客 | 暮野夕风</title>
+    <title>React Native Context 用法 | 暮野夕风</title>
     <link rel="icon" type="image/png" href="/medias/wxm.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -199,13 +198,13 @@ Hexo 主题：hexo-theme-matery 的 github 仓库地址
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        搭建Hexo博客
+                        React Native Context 用法
                     </div>
                 </div>
             </div>
@@ -316,8 +315,12 @@ Hexo 主题：hexo-theme-matery 的 github 仓库地址
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/" target="_blank">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/React/" target="_blank">
+                                <span class="chip bg-color">React</span>
+                            </a>
+                        
+                            <a href="/tags/React-Native/" target="_blank">
+                                <span class="chip bg-color">React Native</span>
                             </a>
                         
                     </div>
@@ -340,21 +343,21 @@ Hexo 主题：hexo-theme-matery 的 github 仓库地址
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-07-21
+                    2020-05-20
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        149
+                        491
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -366,22 +369,108 @@ Hexo 主题：hexo-theme-matery 的 github 仓库地址
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <blockquote>
-<p>搭建 Hexo 博客需要一定的前端基础。技术栈涉及 Node.js、css、yaml 等。</p>
+<p>参考资料：</p>
+<p>React Native 官网文章：<a href="https://reactjs.org/docs/context.html" target="_blank" rel="noopener">Context</a><br>React Native 官网文章：<a href="https://zh-hans.reactjs.org/docs/context.html" target="_blank" rel="noopener">Context(简体中文文档)</a></p>
 </blockquote>
-<h2 id="工具与文档"><a href="#工具与文档" class="headerlink" title="工具与文档"></a>工具与文档</h2><h3 id="基础工具"><a href="#基础工具" class="headerlink" title="基础工具"></a>基础工具</h3><ul>
-<li><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo 博客框架：Hexo 官方文档</a></li>
-<li><a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">Hexo 主题：hexo-theme-matery 的 github 仓库地址</a></li>
-<li><a href="https://github.com/" target="_blank" rel="noopener">代码托管及部署：github</a></li>
-<li><a href="http://www.ruanyifeng.com/blog/2016/07/yaml.html" target="_blank" rel="noopener">配置文件语言：YAML 语言教程</a></li>
-</ul>
-<h3 id="素材"><a href="#素材" class="headerlink" title="素材"></a>素材</h3><ul>
-<li><a href="https://music.liuzhijin.cn/" target="_blank" rel="noopener">音乐素材：刘志进实验室-音乐直链搜索</a></li>
-<li><a href="http://www.ytmp3.cn/" target="_blank" rel="noopener">音乐素材：扬天音乐</a></li>
-<li><a href="https://music.163.com/" target="_blank" rel="noopener">音乐素材：网易云音乐（可以生成外链播放器）</a></li>
-<li><a href="http://zhongguose.com/" target="_blank" rel="noopener">色彩素材：中国色</a></li>
-<li><a href="http://app.inker.co/" target="_blank" rel="noopener">图标制作：inker 矢量图在线制作（没用上）</a></li>
-<li><a href="http://desk.zol.com.cn/" target="_blank" rel="noopener">图片素材：ZOL桌面壁纸</a></li>
-</ul>
+<p><em>本文示例代码使用 TypeScript 语言。</em></p>
+<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>在整个视图树中传递数据，不必每个层级都通过 Props 传。</p>
+<h2 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h2><h3 id="Context-声明"><a href="#Context-声明" class="headerlink" title="Context 声明"></a>Context 声明</h3><p>Context 声明的数据结构最好是所在视图树中通用的。</p>
+<p>在 <code>Contexts.ts</code> 文件中声明 Context 的数据结构：</p>
+<pre class=" language-typescript"><code class="language-typescript"><span class="token keyword">import</span> Rect <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">PageContextValue</span> <span class="token punctuation">{</span>
+  theme<span class="token operator">?</span><span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/**
+ * 页面级上下文。
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> PageContext <span class="token operator">=</span> Rect<span class="token punctuation">.</span>createContext<span class="token operator">&lt;</span>PageContextValue<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3 id="提供-Context-数据源"><a href="#提供-Context-数据源" class="headerlink" title="提供 Context 数据源"></a>提供 Context 数据源</h3><p>在页面根视图外包一层 <code>PageContext.Provider</code> 节点，通过 <code>value</code> 属性提供数据。</p>
+<pre class=" language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> PageContext<span class="token punctuation">,</span> PageContextValue <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./Contexts'</span>
+
+<span class="token keyword">const</span> CONTEXT<span class="token punctuation">:</span> PageContextValue <span class="token operator">=</span> <span class="token punctuation">{</span>
+  theme<span class="token punctuation">:</span> <span class="token string">'dark'</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">HomePage</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span><span class="token operator">&lt;</span><span class="token keyword">any</span><span class="token punctuation">,</span> <span class="token keyword">any</span><span class="token operator">></span> <span class="token punctuation">{</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>PageContext<span class="token punctuation">.</span>Provider value<span class="token operator">=</span><span class="token punctuation">{</span>CONTEXT<span class="token punctuation">}</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>Toolbar <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>PageContext<span class="token punctuation">.</span>Provider<span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>注意，避免使用以下方式，这样会导致每次执行 <code>render</code> 函数都会创建一个新的 <code>PageContextValue</code> 对象，造成不必要的刷新：</p>
+<pre class=" language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> PageContext<span class="token punctuation">,</span> PageContextValue <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./Contexts'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">HomePage</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span><span class="token operator">&lt;</span><span class="token keyword">any</span><span class="token punctuation">,</span> <span class="token keyword">any</span><span class="token operator">></span> <span class="token punctuation">{</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token comment" spellcheck="true">// 在 render 函数中创建 PageContextValue 可能导致不必要的刷新。</span>
+      <span class="token operator">&lt;</span>PageContext<span class="token punctuation">.</span>Provider value<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> theme<span class="token punctuation">:</span> <span class="token string">'dark'</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>Toolbar <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>PageContext<span class="token punctuation">.</span>Provider<span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>如果 Context 是动态改变的，最好通过 State 来刷新：</p>
+<pre class=" language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> PageContext<span class="token punctuation">,</span> PageContextValue <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./Contexts'</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">State</span> <span class="token punctuation">{</span>
+  context<span class="token punctuation">:</span> PageContextValue
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">HomePage</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span><span class="token operator">&lt;</span><span class="token keyword">any</span><span class="token punctuation">,</span> State<span class="token operator">></span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">:</span> <span class="token keyword">any</span><span class="token punctuation">,</span> context<span class="token punctuation">:</span> <span class="token keyword">any</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">,</span> context<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      context<span class="token punctuation">:</span> <span class="token punctuation">{</span> theme<span class="token punctuation">:</span> <span class="token string">'dark'</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>PageContext<span class="token punctuation">.</span>Provider value<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>context<span class="token punctuation">}</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>Toolbar <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>PageContext<span class="token punctuation">.</span>Provider<span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="获取-Context-传递的数据"><a href="#获取-Context-传递的数据" class="headerlink" title="获取 Context 传递的数据"></a>获取 Context 传递的数据</h3><p>通过 <code>this.context</code> 方式获取数据，可以在任何生命周期中获取。</p>
+<pre class=" language-typescript"><code class="language-typescript"><span class="token keyword">class</span> <span class="token class-name">MyClass</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// 将 Context 赋值给 contextType 变量</span>
+  <span class="token keyword">static</span> contextType <span class="token operator">=</span> PageContext<span class="token punctuation">;</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> value <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>context<span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">/* 基于这个值进行渲染工作 */</span>
+    <span class="token keyword">return</span> value<span class="token punctuation">.</span>theme <span class="token operator">===</span> <span class="token string">'dark'</span> <span class="token operator">?</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>View<span class="token operator">></span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">/* dark主题的组件 */</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">></span>
+    <span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>View<span class="token operator">></span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">/* 非dark主题的组件 */</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>通过 <code>Context.Consumer</code> 方式获取数据</p>
+<pre class=" language-typescript"><code class="language-typescript"><span class="token keyword">class</span> <span class="token class-name">MyClass</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// 将 Context 赋值给 contextType 变量</span>
+  <span class="token keyword">static</span> contextType <span class="token operator">=</span> PageContext<span class="token punctuation">;</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token operator">&lt;</span>PageContext<span class="token punctuation">.</span>Consumer<span class="token operator">></span>
+    <span class="token punctuation">{</span>value <span class="token operator">=</span><span class="token operator">></span> value<span class="token punctuation">.</span>theme <span class="token operator">===</span> <span class="token string">'dark'</span> <span class="token operator">?</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>View<span class="token operator">></span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">/* dark主题的组件 */</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">></span>
+    <span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>View<span class="token operator">></span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">/* 非dark主题的组件 */</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>PageContext<span class="token punctuation">.</span>Consumer<span class="token operator">></span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>以上是 Context 的使用步骤，更多用法请参考官网。</p>
 
             </div>
             <hr/>
@@ -416,9 +505,9 @@ Hexo 主题：hexo-theme-matery 的 github 仓库地址
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《搭建Hexo博客》
+                    《React Native Context 用法》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/21/da-jian-hexo-bo-ke/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/05/20/react-native-context-yong-fa/" property="cc:attributionName"
                rel="cc:attributionURL">
                 暮野夕风
             </a> 采用
@@ -462,99 +551,25 @@ Hexo 主题：hexo-theme-matery 的 github 仓库地址
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/07/26/shi-yong-ssh-xie-yi-tong-guo-lu-you-qi-yuan-cheng-fang-wen-jia-li-de-dian-nao/">
+                <a href="/2020/06/17/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="使用SSH协议通过路由器远程访问家里的电脑">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">使用SSH协议通过路由器远程访问家里的电脑</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-技术背景需要掌握命令行终端的使用和常用的 Shell 命令。
-需求说明之前在 Vultr 搭建了 VPN，搭建过程是通过 SSH 远程连接实现的。受此启发，便想着能不能在自己的电脑上搭建 SSH 服务，通过 SSH 连接家里电脑的终端，
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-26
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-17
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/技术/" class="post-category" target="_blank">
-                                    技术
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/SSH/" target="_blank">
-                        <span class="chip bg-color">SSH</span>
-                    </a>
-                    
-                    <a href="/tags/freeSSH/" target="_blank">
-                        <span class="chip bg-color">freeSSH</span>
-                    </a>
-                    
-                    <a href="/tags/window系统/" target="_blank">
-                        <span class="chip bg-color">window系统</span>
-                    </a>
-                    
-                    <a href="/tags/远程访问/" target="_blank">
-                        <span class="chip bg-color">远程访问</span>
-                    </a>
-                    
-                    <a href="/tags/路由器/" target="_blank">
-                        <span class="chip bg-color">路由器</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/07/21/da-jian-hexo-bo-ke/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="搭建Hexo博客">
-                        
-                        <span class="card-title">搭建Hexo博客</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-搭建 Hexo 博客需要一定的前端基础。技术栈涉及 Node.js、css、yaml 等。
-
-工具与文档基础工具
-Hexo 博客框架：Hexo 官方文档
-Hexo 主题：hexo-theme-matery 的 github 仓库地址
-代码
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-21
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -567,12 +582,67 @@ Hexo 主题：hexo-theme-matery 的 github 仓库地址
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/Hexo/" target="_blank">
                         <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/08/01/flutter-wen-ti-ji-lu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="【Flutter】问题记录">
+                        
+                        <span class="card-title">【Flutter】问题记录</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            gradle 问题Exception in thread “main” java.lang.NullPointerException（window7系统）
+参考：简书-flutter运行报错exited abnormally
+
+在 Andr
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Flutter/" class="post-category" target="_blank">
+                                    Flutter
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Flutter/" target="_blank">
+                        <span class="chip bg-color">Flutter</span>
+                    </a>
+                    
+                    <a href="/tags/Android/" target="_blank">
+                        <span class="chip bg-color">Android</span>
                     </a>
                     
                 </div>

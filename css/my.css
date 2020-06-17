@@ -1,26 +1,23 @@
 /* Here is your custom css styles. */
-/* 主题颜色：草黄色 #d2b42c，鲜绿色 #43b244 */
+/* 主题颜色：稻草色（取色器取得） #f3d2ae，翠绿色 #048c79 */
 body {
-  background-color: #f3d2ae; /* 稻草色 */
+  background-color: #f3d2ae;
   margin: 0;
   color: #34495e;
 }
 
 /* 标题栏和底部栏的背景色 */
 .bg-color {
-  background: linear-gradient(to right, rgba(210, 180, 44) 0%, rgba(43, 178, 44) 100%);
+  background: linear-gradient(to right, #36c6b2 0%, #048c79 100%);
 }
 
-.white-color {
-  color: #fff;
-}
 /* 底部进度条的样式 */
 .progress-bar {
   height: 4px;
   position: fixed;
   bottom: 0;
   z-index: 300;
-  background: linear-gradient(to right, rgba(210, 180, 44) 0%, rgba(43, 178, 44) 100%);
+  background: linear-gradient(to right, #36c6b2 0%, #048c79 100%);
   opacity: 0.8;
 }
 
@@ -36,14 +33,14 @@ body {
 
 /* 回到顶部按钮 */
 .top-scroll .btn-floating {
-  background: linear-gradient(to bottom right, #85d22c 0%, #43b244 100%);
+  background: linear-gradient(to bottom right, #98ce32 0%, #43b244 100%);
   width: 48px;
   height: 48px;
 }
 
 /* 开始阅读、github 按钮获得焦点时的样式 */
 .cover-btns a:hover {
-  border: 1px solid #43b244;
-  background-color: #43b244;
-  box-shadow: 0 14px 26px -12px rgba(210, 180, 44, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(210, 180, 44, 0.2);
+  border: 1px solid #048c79;
+  background-color: #048c79;
+  box-shadow: 0 14px 26px -12px rgba(3, 91, 79, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(210, 180, 44, 0.2);
 }
